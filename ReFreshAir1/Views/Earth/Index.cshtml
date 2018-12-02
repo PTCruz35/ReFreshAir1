@@ -1,0 +1,34 @@
+﻿@model ReFreshAir1.Models.Zipcode
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@using (Html.BeginForm("FindLocations", "Earth"))
+{
+
+
+    <br />
+
+    @Html.Label("Enter ZipCode")
+    <br />
+
+    @Html.TextBoxFor(m => m.zipcode)
+
+    <input type="submit" id="submitId" value="Submit" />
+}
+
+@*@using (Html.BeginForm("FindMaterials", "Earth"))
+    {
+
+        <br />
+
+
+        <input type="submit" id="FindMaterial" value="Find Recycle Material Info" />
+
+        <br />
+    }
+*@
+
+

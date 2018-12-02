@@ -196,6 +196,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EarthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\RequestController.cs" />
@@ -203,9 +204,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\GeoInfo.cs" />
+    <Compile Include="Models\GeoResult.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Location.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MaterialDescription.cs" />
+    <Compile Include="Models\MaterialResult.cs" />
+    <Compile Include="Models\Materials.cs" />
     <Compile Include="Models\Request.cs" />
+    <Compile Include="Models\ResultSet.cs" />
+    <Compile Include="Models\Zipcode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -275,6 +284,10 @@
     <Content Include="Views\Request\Details.cshtml" />
     <Content Include="Views\Request\Edit.cshtml" />
     <Content Include="Views\Request\Index.cshtml" />
+    <Content Include="Views\Earth\FindLocations.cshtml" />
+    <Content Include="Views\Earth\FindMaterials.cshtml" />
+    <Content Include="Views\Earth\Index.cshtml" />
+    <Content Include="Views\Earth\LocationDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

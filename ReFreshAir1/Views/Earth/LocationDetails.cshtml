@@ -1,0 +1,19 @@
+﻿@model List<ReFreshAir1.Models.RootObject>
+@{
+    ViewBag.Title = "LocationDetails";
+}
+@*@{
+        var materials = (List<Earth.Models.Material>)ViewData["materials"]; // Cast the list
+    }
+
+    <h2>LocationDetails</h2>
+    @Html.Raw(ViewBag.info)
+
+    <h1>We are really trying harddddddddddddddddd</h1>
+
+    @foreach (var temp in materials)
+    {
+        @temp.description
+    }
+*@
+@Html.Raw(ViewBag.test)
