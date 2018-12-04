@@ -7,12 +7,12 @@
 @{
     var locations = (List<ReFreshAir1.Models.Location>)ViewData["locations"]; // Cast the list
 }
+<link href="~/Content/Site.css" rel="stylesheet" />
 
-<h2>Info</h2>
 <body>
-    @using (Html.BeginForm("LocationDetails", "Earth"))
+    @using (Html.BeginForm("FindLocations", "Earth"))
     {
-        <table class="table table-hover">
+        <table id ="materials"class="table table-hover">
             <thead>
                 <tr class="table-primary">
 
@@ -24,15 +24,17 @@
             <tbody>
                 @foreach (var temp in locations)
                 {
-                    <tr class="table-primary">
+                <tr class="table-primary">
 
-                        <td scope="row" class="black">
-                            @temp.description
-                                               
-                            @*<a href="@Url.Action("LocationDetails", "Earth", new { location_id = ViewData["location_id"] })">@temp.description</a>*@
-                                            </td>
-                        <td scope="row">@temp.curbside</td>
-                        <td scope="row">@temp.distance</td>
+                    <td scope="row" class="black">
+                        @temp.description
+
+                        @*<a href="@Url.Action("LocationDetails", "Earth", new { location_id = ViewData["location_id"] })">@temp.description</a>*@
+                    </td>
+                    <td scope="row">@temp.curbside</td>
+                    
+
+                    <td scope="row">@temp.distance</td>
 
                     </tr>
                 }

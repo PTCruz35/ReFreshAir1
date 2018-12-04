@@ -9,56 +9,59 @@
 @{
     var materials = (List<ReFreshAir1.Models.MaterialDescription>)ViewData["materials"]; // Cast the list
 }
-
+<link href="~/Content/Site.css" rel="stylesheet" />
 @*<h2>Material Description</h2>*@
-
-<table class="table table-hover">
-    <thead>
-        <tr class="table-primary">
-            <th scope="col">Material  Description</th>
-            <th scope="col">Description</th>
-
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var mat in materials)
-        {
+<div class="container">
+    <table id ="materials"class="table table-hover">
+        <thead>
             <tr class="table-primary">
-                <td scope="row">@mat.description</td>
-                <td scope="row">@mat.long_description</td>
+                <th scope="col">Material</th>
 
-
-                @*<td scope="row" class="black">
-                      <a href="@Url.Action("LocationDetails", "Earth", new { location_id = ViewData["location_id"] })">@temp.description</a>
-                    </td>
-                    <td scope="row">@temp.distance</td>
-                *@
+                <th scope="col">Description</th>
 
             </tr>
-        }
-    </tbody>
+        </thead>
+        <tbody>
+            @foreach (var mat in materials)
+            {
+                <tr class="table-primary">
+                    <td scope="row">@mat.description</td>
+                    <td scope="row" >@mat.long_description</td>
 
-</table>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                <li>@Html.ActionLink("SearchLocations", "Index", "Earth")</li>
-                <li>@Html.ActionLink("Materials", "FindMaterials", "Earth")</li>
-                <li>@Html.ActionLink("About", "About", "Home")</li>
-                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-            </ul>
-            @Html.Partial("_LoginPartial")
+                    @*<td scope="row" class="black">
+                          <a href="@Url.Action("LocationDetails", "Earth", new { location_id = ViewData["location_id"] })">@temp.description</a>
+                        </td>
+                        <td scope="row">@temp.distance</td>
+                    *@
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@*
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("SearchLocations", "Index", "Earth")</li>
+                    <li>@Html.ActionLink("Materials", "FindMaterials", "Earth")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
         </div>
     </div>
-</div>
+*@

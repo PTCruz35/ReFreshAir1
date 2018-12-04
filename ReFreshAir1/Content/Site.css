@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -22,3 +23,49 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*
+    ***********
+*/
+
+table {
+    border: Solid 1px green;
+    width: 100%;
+}
+
+td {
+    border: Solid 1px green;
+}
+
+#materials {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    #materials td, #materials th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #materials tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #materials tr:hover {
+        background-color: #ddd;
+    }
+
+    #materials th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+
+    }
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+

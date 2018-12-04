@@ -3,7 +3,7 @@
 @{
     ViewBag.Title = "Index";
 }
-
+<link href="~/Content/Site.css" rel="stylesheet" />
 
 @using (Html.BeginForm("FindLocations", "Earth"))
 {
@@ -11,7 +11,9 @@
 
     <br />
 
-    @Html.Label("Enter ZipCode")
+   @* Html.Label("Enter ZipCode")*@
+
+        @Html.Label("Enter Zipcode", new { style = "color:green"})
     <br />
 
     @Html.TextBoxFor(m => m.zipcode)

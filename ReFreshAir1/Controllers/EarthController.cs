@@ -52,7 +52,7 @@ namespace ReFreshAir1.Controllers
             }
             catch
             {
-                return "Sorry";
+                return "The information you requested is unavailable.";
             }
         }
 
