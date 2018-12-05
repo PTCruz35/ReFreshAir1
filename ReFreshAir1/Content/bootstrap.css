@@ -4207,6 +4207,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-collapse.in {
     overflow-y: visible;
   }
+
   .navbar-fixed-top .navbar-collapse,
   .navbar-static-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -4214,10 +4215,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-left: 0;
   }
 }
+
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
 }
+
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
   .navbar-fixed-bottom .navbar-collapse {
@@ -4240,6 +4243,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: 0;
   }
 }
+
 .navbar-static-top {
   z-index: 1000;
   border-width: 0 0 1px;

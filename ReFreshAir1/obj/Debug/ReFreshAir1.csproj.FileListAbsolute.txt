@@ -238,3 +238,5 @@ C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug
 C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug\ReFreshAir1.csproj.CopyComplete
 C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug\ReFreshAir1.dll
 C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug\ReFreshAir1.pdb
+C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug\ReFreshAir1.Migrations.removeconnstring.resources
+C:\Users\User\source\repos\Project_ReFreshAir1\ReFreshAir1\ReFreshAir1\obj\Debug\ReFreshAir1.csproj.GenerateResource.cache

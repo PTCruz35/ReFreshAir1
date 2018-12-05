@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using JsonConvert = Newtonsoft.Json.JsonConvert;
 using System.Collections;
 using ReFreshAir1.Models;
+using Newtonsoft.Json.Linq;
 
 namespace ReFreshAir1.Controllers
 {
@@ -114,8 +115,10 @@ namespace ReFreshAir1.Controllers
 
                     System.Diagnostics.Debug.WriteLine("Result - " + apiResponse);
 
-                    var info = JsonConvert.DeserializeObject<RootObject>(apiResponse);
-                    ViewBag.info = info.result.resultModel;
+                    var jObject = JObject.Parse(apiResponse);
+                    var rawData = jObject["result"][location_id];
+                    var info = JsonConvert.DeserializeObject<LocationDetail>(rawData.ToString());
+
 
                     //Dim ThisToken as Token = Newtonsoft.Json.JsonConvert.DeserializeObject(Of Token)(JsonString);
 
@@ -126,12 +129,10 @@ namespace ReFreshAir1.Controllers
 
                     // List<Material> materials = info.result.location_id.materials;
                     // var test = info.result.location_id.;
-                    var test = info.result.resultModel;
 
                     //   ViewData["materials"] = materials;
-                    System.Diagnostics.Debug.WriteLine("Test Result - " + test);
-                    ViewBag.test = test;
-                    return View("LocationDetails");
+
+                    return View("LocationDetails", info);
 
                 }
             }

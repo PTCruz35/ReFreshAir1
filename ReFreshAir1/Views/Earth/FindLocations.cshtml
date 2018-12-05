@@ -27,9 +27,9 @@
                 <tr class="table-primary">
 
                     <td scope="row" class="black">
-                        @temp.description
+                        @* @temp.description *@ 
 
-                        @*<a href="@Url.Action("LocationDetails", "Earth", new { location_id = ViewData["location_id"] })">@temp.description</a>*@
+                        <a href="@Url.Action("LocationDetails", "Earth", new { location_id = temp.location_id })">@temp.description</a>
                     </td>
                     <td scope="row">@temp.curbside</td>
                     
