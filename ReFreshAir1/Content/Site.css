@@ -30,11 +30,12 @@ textarea {
 
 table {
     border: Solid 1px green;
-    width: 100%;
+    width: 50%;
 }
 
 td {
     border: Solid 1px green;
+
 }
 
 #materials {
@@ -46,6 +47,8 @@ td {
     #materials td, #materials th {
         border: 1px solid #ddd;
         padding: 8px;
+
+       
     }
 
     #materials tr:nth-child(even) {
@@ -59,9 +62,10 @@ td {
     #materials th {
         padding-top: 12px;
         padding-bottom: 12px;
-        text-align: left;
+        text-align: center;
         background-color: #4CAF50;
         color: white;
+
 
     }
 

@@ -16,9 +16,9 @@
             <thead>
                 <tr class="table-primary">
 
-                    <th scope="col">Description</th>
-                    <th scope="col">Curb Side Availability</th>
-                    <th scope="col">Distance</th>
+                    <th scope="col" style="text-align:center" width="60%">DESCRIPTION</th>
+                    <th scope="col"style="text-align:center" width="30%">CURB SIDE AVAILABILITY</th>
+                    <th scope="col"style="text-align:center" width="10%">DISTANCE</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,15 +26,27 @@
                 {
                 <tr class="table-primary">
 
-                    <td scope="row" class="black">
+                    <td scope="row" style="color:green" align="center"class="black">
                         @* @temp.description *@ 
 
                         <a href="@Url.Action("LocationDetails", "Earth", new { location_id = temp.location_id })">@temp.description</a>
                     </td>
-                    <td scope="row">@temp.curbside</td>
+                    <td scope="row"style="color:green" align="center"> 
+                    @if (temp.curbside == false) 
+                    {
+                        @: No
+                    }
+                    else
+                    {
+                        @: Yes
+                    }
+
+                    
+                    </td>
+                  
                     
 
-                    <td scope="row">@temp.distance</td>
+                    <td scope="row"style="color:green" align="center">@temp.distance</td>
 
                     </tr>
                 }
