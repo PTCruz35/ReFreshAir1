@@ -11,25 +11,25 @@
 </p>
 <table class="table">
     <tr>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.FirstName)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.LastName)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.Address)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.PhoneNumber)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.EmailAddress)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.City)
         </th>
-        <th>
+        <th scope="row" style="color:green" align="center">
             @Html.DisplayNameFor(model => model.State)
         </th>
         <th></th>
@@ -37,28 +37,28 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.FirstName)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.LastName)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.Address)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.PhoneNumber)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.EmailAddress)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.City)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.DisplayFor(modelItem => item.State)
         </td>
-        <td>
+        <td scope="row" style="color:darkseagreen" align="center">
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
             @Html.ActionLink("Details", "Details", new { id=item.Id }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.Id })
