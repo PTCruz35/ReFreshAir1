@@ -16,7 +16,6 @@
         <thead>
             <tr class="table-primary">
                 <th scope="col">Material</th>
-
                 <th scope="col">Description</th>
 
             </tr>
@@ -25,8 +24,8 @@
             @foreach (var mat in materials)
             {
                 <tr class="table-primary">
-                    <td scope="row">@mat.description</td>
-                    <td scope="row" >@mat.long_description</td>
+                    <td scope="row"style="color:green">@mat.description</td>
+                    <td scope="row"style="color:green" >@mat.long_description</td>
 
 
                     @*<td scope="row" class="black">
