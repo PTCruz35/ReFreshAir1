@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="navbar navbar-fixed-top" style="color:green;" >
+    <div class="navbar navbar-static-top" style="color:green;" >
         <div class="container">
             
             <div class="navbar-header">
@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <img src="~/Content/cloud.png" class="img-circle" height="50" width="50" />
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Re-Fresh Air", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
                 <div class="navbar-collapse collapse" style="color:green;">
 
@@ -31,6 +31,7 @@
                         <li>@Html.ActionLink("Materials", "FindMaterials", "Earth")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                         <li>@Html.ActionLink("Resources", "Index", "Request")</li>
+                        <li>@Html.ActionLink("Request", "Create", "Request")</li>
 
 
                     </ul>
@@ -42,7 +43,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p style="color:green">&copy; @DateTime.Now.Year - Re-Fresh Air</p>
         </footer>
     </div>
 
