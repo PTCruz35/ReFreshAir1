@@ -2,6 +2,7 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -35,7 +36,6 @@ table {
 
 td {
     border: Solid 1px green;
-
 }
 
 #materials {
@@ -47,8 +47,6 @@ td {
     #materials td, #materials th {
         border: 1px solid #ddd;
         padding: 8px;
-
-       
     }
 
     #materials tr:nth-child(even) {

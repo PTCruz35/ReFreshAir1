@@ -19,7 +19,15 @@ namespace ReFreshAir1.Controllers
         // GET: Request
         public async Task<ActionResult> Index()
         {
-            return View(await db.Requests.ToListAsync());
+            if (User.Identity.Name.Contains("admin"))
+            {
+                return View(await db.Requests.ToListAsync());
+            }
+            else
+            {
+                //return RedirectToAction("Index", "Home");
+                return View("ThankYou");
+            }
         }
 
         // GET: Request/Details/5

@@ -18,35 +18,43 @@
     }
 *@
 
-<br/>
 <br />
-<table with =" 80%"id="materials" class="table table-hover">
+<br />
+<table with=" 80%" id="materials" class="table table-hover">
     <tr class="table-bordered">
         <th width="10%">DESCRIPTION</th>
-        <td width="40%">@Model.Description</td>
+        <td width="40%" style="color:green">@Model.Description</td>
     </tr>
     <tr>
         <th>ADDRESS</th>
-        <td>@Model.Address</td>
+        <td style="color:green">@Model.Address</td>
     </tr>
     <tr>
         <th>CITY</th>
-        <td>@Model.City</td>
+        <td style="color:green">@Model.City</td>
     </tr>
     <tr>
         <th>PROVINCE</th>
-        <td>@Model.Province</td>
+        <td style="color:green">@Model.Province</td>
     </tr>
     <tr>
         <th>PHONE</th>
-        <td>@Model.Phone</td>
+        <td style="color:green">@Model.Phone</td>
     </tr>
     <tr>
         <th>HOURS</th>
-        <td>@Model.Hours</td>
+        <td style="color:green">@Model.Hours</td>
     </tr>
     <tr>
         <th>INFO</th>
-        <td>@Model.Notes</td>
+        <td style="color:green">@if (Model.Notes == "")
+        {@: Please call for further information
+        }
+        else
+        {
+            @Model.Notes
+        }
+        </td>
     </tr>
 </table>
+
