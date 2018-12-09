@@ -1,0 +1,36 @@
+﻿@model ReFreshAir1.Models.City
+@{
+    ViewBag.Title = "AirIndex";
+}
+
+<b style="color:blue"> FIND AIR QUALITY INDEX BY CITY</b>
+
+
+
+
+
+<link href="~/Content/Site.css" rel="stylesheet" />
+
+@using (Html.BeginForm("GetPollution", "AirQuality"))
+{
+
+
+    <br />
+
+    @* Html.Label("Enter City")*@
+
+
+    @Html.Label("ENTER CITY", new { style = "color:blue" })
+    <br />
+    <br />
+    @Html.TextBoxFor(m => m.city)
+
+
+
+    <input type="submit" id="submitId" value="Submit" />
+}
+
+
+
+
+

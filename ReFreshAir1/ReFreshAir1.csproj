@@ -196,6 +196,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AirQualityController.cs" />
     <Compile Include="Controllers\EarthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -209,6 +210,11 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AQIFullResult.cs" />
+    <Compile Include="Models\City.cs" />
+    <Compile Include="Models\CurrentResult.cs" />
+    <Compile Include="Models\DataLocationResult.cs" />
+    <Compile Include="Models\DataResult.cs" />
     <Compile Include="Models\GeoInfo.cs" />
     <Compile Include="Models\GeoResult.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -218,8 +224,11 @@
     <Compile Include="Models\MaterialDescription.cs" />
     <Compile Include="Models\MaterialResult.cs" />
     <Compile Include="Models\Material.cs" />
+    <Compile Include="Models\PollutionResult.cs" />
     <Compile Include="Models\Request.cs" />
     <Compile Include="Models\ResultSet.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\Weather.cs" />
     <Compile Include="Models\Zipcode.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +241,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cloud.png" />
     <Content Include="img\air and recycle.jpg" />
+    <Content Include="img\AQI_Chart.png" />
     <Content Include="img\cloud green.jpg" />
     <Content Include="img\cloud.jpg" />
     <Content Include="img\Earth_and_sky.jpg" />
@@ -314,6 +324,8 @@
     <Content Include="Views\Earth\Index.cshtml" />
     <Content Include="Views\Earth\LocationDetails.cshtml" />
     <Content Include="Views\Request\ThankYou.cshtml" />
+    <Content Include="Views\AirQuality\GetPollution.cshtml" />
+    <Content Include="Views\AirQuality\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
