@@ -23,17 +23,17 @@
                 @*<img src="~/img/" class="img-circle" height="50" width="50" />*@
                 @Html.ActionLink("Re-Fresh Air", "Index", "Home", new { area = ""}, new { @class = "navbar-brand"  })
             </div>
-                <div class="navbar-collapse collapse" style="background-color:deepskyblue;">
+                <div class="navbar-collapse collapse" style="background-color:limegreen;">
 
                     <ul class="nav navbar-nav">
 
                         @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
-                        @*<li>@Html.ActionLink("About", "About", "Home")</li>*@
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li style="color:green">@Html.ActionLink("SearchLocations", "Index", "Earth")</li>
                         <li>@Html.ActionLink("Materials", "FindMaterials", "Earth")</li>
                         <li>@Html.ActionLink("AQI", "Index", "AirQuality")</li>
-                        <li>@Html.ActionLink("Resources", "Index", "Request")</li>
                         <li>@Html.ActionLink("Request", "Create", "Request")</li>
+                        <li>@Html.ActionLink("Admin", "Index", "Request")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
 
 
