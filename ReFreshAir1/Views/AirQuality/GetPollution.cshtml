@@ -9,19 +9,27 @@
 
 <link href="~/Content/Site.css" rel="stylesheet" />
 
-<p style="color:blue">
-    Air Quality Index for Entered City is @Model.Aqius
-</p>
-<img src="~/img/AQI_Chart.png" />
-<h6>Courtesy: Rouge Valley Clean Air</h6>
-@*
-<td style="color:green">
-    @if (Model.Notes == "")
-    {@: Please call for further information
-    }
-    else
-    {
-        @Model.Notes 
-    }
-</td>
-*@
+<font size=" 5">
+    <font color=" green">
+        Air Quality Index (AQI)
+        </font>
+    </font>
+        <br />
+    <br />
+
+        <p style="color:blue">
+            Air Quality Index for the city you entered is @Model.Aqius
+        </p>
+        <img src="~/img/AQI_Chart.png" />
+        <h6>Courtesy: Rouge Valley Clean Air</h6>
+        @*
+            <td style="color:green">
+                @if (Model.Notes == "")
+                {@: Please call for further information
+                }
+                else
+                {
+                    @Model.Notes
+                }
+            </td>
+        *@

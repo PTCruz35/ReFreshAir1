@@ -25,8 +25,8 @@ namespace ReFreshAir1.Controllers
             }
             else
             {
-                //return RedirectToAction("Index", "Home");
-                return View("ThankYou");
+                return RedirectToAction("Index", "Home");
+                //return View("ThankYou");
             }
         }
 

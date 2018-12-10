@@ -12,13 +12,13 @@
 <body>
     @using (Html.BeginForm("FindLocations", "Earth"))
     {
-        <table id ="materials"class="table table-hover">
+        <table id ="materials"class="table table-hover" border="1">
             <thead>
                 <tr class="table-primary">
 
-                    <th scope="col" style="text-align:center" width="60%">DESCRIPTION</th>
-                    <th scope="col"style="text-align:center" width="30%">CURB SIDE AVAILABILITY</th>
-                    <th scope="col"style="text-align:center" width="10%">DISTANCE</th>
+                    <th scope="col" style="text-align:center" width="40%">DESCRIPTION</th>
+                    <th scope="col"style="text-align:center" width="20%">CURB SIDE AVAILABILITY</th>
+                    <th scope="col"style="text-align:center" width="20%">DISTANCE</th>
                 </tr>
             </thead>
             <tbody>
@@ -26,7 +26,7 @@
                 {
                 <tr class="table-primary">
 
-                    <td scope="row" style="color:green" align="center"class="black">
+                    <td scope="row" style="color:green; padding-left: 80px;" align="left"class="black" >
                         @* @temp.description *@ 
 
                         <a href="@Url.Action("LocationDetails", "Earth", new { location_id = temp.location_id })">@temp.description</a>

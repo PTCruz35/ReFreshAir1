@@ -3,7 +3,7 @@
     ViewBag.Title = "AirIndex";
 }
 
-<b style="color:blue"> FIND AIR QUALITY INDEX BY CITY</b>
+
 
 
 
@@ -13,15 +13,37 @@
 
 @using (Html.BeginForm("GetPollution", "AirQuality"))
 {
+   <br/>
+  
 
+   <font size=" 5">
+       <font color=" green">
+           Air Quality Index (AQI)
+           <br />
+           <br />
+
+       </font>
+
+       <font size=" 3">
+
+           The AQI is a number used by government agencies to communicate to the public how polluted the air currently is. The higher the number, the more polluted the air is.
+       </font>
+       <br />
+       <br />
+       <font size=" 3">
+           Enter a city below to find its AQI
+       </font>
+
+   </font>
+       
 
     <br />
 
     @* Html.Label("Enter City")*@
 
 
-    @Html.Label("ENTER CITY", new { style = "color:blue" })
-    <br />
+    @*@Html.Label("ENTER CITY", new { style = "color:blue" })*@
+    
     <br />
     @Html.TextBoxFor(m => m.city)
 
