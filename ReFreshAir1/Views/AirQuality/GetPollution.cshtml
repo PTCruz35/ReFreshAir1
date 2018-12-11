@@ -12,24 +12,53 @@
 <font size=" 5">
     <font color=" green">
         Air Quality Index (AQI)
-        </font>
     </font>
-        <br />
-    <br />
+</font>
+<br />
+<br />
+<h4 style="color:blue">
+    @if (Model.Aqius >= 0 && Model.Aqius <= 50)
+    {
+        @:AQI for Entered City is in GOOD Range at @Model.Aqius
 
-        <p style="color:blue">
-            Air Quality Index for the city you entered is @Model.Aqius
-        </p>
-        <img src="~/img/AQI_Chart.png" />
-        <h6>Courtesy: Rouge Valley Clean Air</h6>
-        @*
-            <td style="color:green">
-                @if (Model.Notes == "")
-                {@: Please call for further information
-                }
-                else
-                {
-                    @Model.Notes
-                }
-            </td>
-        *@
+
+
+
+    }
+    else if (Model.Aqius >= 51 && Model.Aqius <= 100)
+    {
+        @:AQI for Entered City is in Moderate at @Model.Aqius
+    }
+    else if (Model.Aqius >= 101 && Model.Aqius <= 150)
+    {
+        @:AQI for Entered City is in Unhealthy for Sensitive Groups Range at @Model.Aqius
+    }
+    else if (Model.Aqius >= 151 && Model.Aqius <= 200)
+    {
+        @:AQI for Entered City is in Unhealthy Range at @Model.Aqius
+    }
+    else if (Model.Aqius >= 201 && Model.Aqius <= 300)
+    {
+        @:AQI for Entered City is in Very Unhealthy Range at @Model.Aqius
+    }
+    else if (Model.Aqius >= 301)
+    {
+        @:AQI for Entered City is in Hazardous Range at @Model.Aqius
+    }
+
+</h4>
+<br />
+
+<img src="~/img/AQI-Scale.JPG" />
+<h6>Courtesy: Center for Disease Control and Prevention</h6>
+@*
+    <td style="color:green">
+        @if (Model.Notes == "")
+        {@: Please call for further information
+        }
+        else
+        {
+            @Model.Notes
+        }
+    </td>
+*@

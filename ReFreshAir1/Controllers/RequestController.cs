@@ -62,7 +62,7 @@ namespace ReFreshAir1.Controllers
             {
                 db.Requests.Add(request);
                 await db.SaveChangesAsync();
-                return RedirectToAction("Index");
+                return View("ThankYou");
             }
 
             return View(request);

@@ -241,7 +241,9 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\cloud.png" />
     <Content Include="img\air and recycle.jpg" />
+    <Content Include="img\AQI-Scale.JPG" />
     <Content Include="img\AQI_Chart.png" />
+    <Content Include="img\AQI_Image.png" />
     <Content Include="img\cloud green.jpg" />
     <Content Include="img\cloud.jpg" />
     <Content Include="img\Earth_and_sky.jpg" />
