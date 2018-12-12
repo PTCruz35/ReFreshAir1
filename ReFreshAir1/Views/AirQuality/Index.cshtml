@@ -2,9 +2,7 @@
 @{
     ViewBag.Title = "AirIndex";
 }
-
 <link href="~/Content/Site.css" rel="stylesheet" />
-
 @using (Html.BeginForm("GetPollution", "AirQuality"))
 {
     <br />
@@ -19,21 +17,8 @@
     <br />
     @Html.Label("ENTER A CITY TO FIND ITS AQI", new { style = "color:blue"})
     <br />
-
-    @* Html.Label("Enter City")*@
-
-
-    @*@Html.Label("ENTER CITY", new { style = "color:blue" })*@
-
     <br />
     @Html.TextBoxFor(m => m.city, new { placeholder = "City", type = "text"})
-
-
-
     <input type="submit" id="submitId" value="Submit" />
 }
-
-
-
-
 

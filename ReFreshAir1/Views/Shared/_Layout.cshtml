@@ -6,7 +6,6 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-static-top" >
@@ -20,14 +19,10 @@
                 </button>
 
                 <img src="~/img/Logo_image.png" class="img-circle" height="50" width="50"/>
-                @*<img src="~/img/" class="img-circle" height="50" width="50" />*@
                 @Html.ActionLink("Re-Fresh Air", "Index", "Home", new { area = ""}, new { @class = "navbar-brand"  })
             </div>
                 <div class="navbar-collapse collapse" style="background-color:limegreen;">
-
                     <ul class="nav navbar-nav">
-
-                        @*<li>@Html.ActionLink("Home", "Index", "Home")</li>*@
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li style="color:green">@Html.ActionLink("SearchLocations", "Index", "Earth")</li>
                         <li>@Html.ActionLink("Materials", "FindMaterials", "Earth")</li>
@@ -35,8 +30,6 @@
                         <li>@Html.ActionLink("Request", "Create", "Request")</li>
                         <li>@Html.ActionLink("Admin", "Index", "Request")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-
-
                     </ul>
                     @Html.Partial("_LoginPartial")
                 </div>
@@ -49,7 +42,6 @@
             <p style="color:green" >&copy; Re-Fresh Air  @DateTime.Now.Year</p>
         </footer>
     </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

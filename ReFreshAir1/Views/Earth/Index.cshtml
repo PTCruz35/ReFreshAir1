@@ -1,38 +1,17 @@
 ﻿@model ReFreshAir1.Models.Zipcode
-
 @{
     ViewBag.Title = "Index";
 }
 <link href="~/Content/Site.css" rel="stylesheet" />
-
 @using (Html.BeginForm("FindLocations", "Earth"))
 {
-
-
     <br />
     <b style="color:green"> FIND NEAREST RECYCLE LOCATIONS</b>
-
     <br />
     <br />
-
     @Html.Label("ENTER ZIPCODE", new { style = "color:green" })
     <br />
     <br />
     @Html.TextBoxFor(m => m.zipcode, new { placeholder = "ZipCode", maxlength=5, type="number"})
-
     <input type="submit" id="submitId" value="Submit" />
 }
-
-@*@using (Html.BeginForm("FindMaterials", "Earth"))
-    {
-
-        <br />
-
-
-        <input type="submit" id="FindMaterial" value="Find Recycle Material Info" />
-
-        <br />
-    }
-*@
-
-

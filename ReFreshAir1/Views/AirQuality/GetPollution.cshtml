@@ -4,11 +4,7 @@
 @{
     ViewBag.Title = "GetPollution";
 }
-
-
-
 <link href="~/Content/Site.css" rel="stylesheet" />
-
 <font size=" 5">
     <font color=" green">
         Air Quality Index (AQI)
@@ -20,10 +16,6 @@
     @if (Model.Aqius >= 0 && Model.Aqius <= 50)
     {
         @:AQI for Entered City is in GOOD Range at @Model.Aqius
-
-
-
-
     }
     else if (Model.Aqius >= 51 && Model.Aqius <= 100)
     {
@@ -45,20 +37,7 @@
     {
         @:AQI for Entered City is in Hazardous Range at @Model.Aqius
     }
-
 </h4>
 <br />
-
 <img src="~/img/AQI-Scale.JPG" />
 <h6>Courtesy: Center for Disease Control and Prevention</h6>
-@*
-    <td style="color:green">
-        @if (Model.Notes == "")
-        {@: Please call for further information
-        }
-        else
-        {
-            @Model.Notes
-        }
-    </td>
-*@

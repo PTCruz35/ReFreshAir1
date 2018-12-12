@@ -38,7 +38,6 @@ namespace ReFreshAir1.Controllers
                     StreamReader reader = new StreamReader(response.GetResponseStream());
                     apiResponse = reader.ReadToEnd();
                     GeoResult info = JsonConvert.DeserializeObject<GeoResult>(apiResponse);
-
                     var lat = info.result.latitude;
                     var lon = info.result.longitude;
                     return lat + ":" + lon;
@@ -101,7 +100,6 @@ namespace ReFreshAir1.Controllers
                 return View();
             }
         }
-
 
         //  [HttpPost]
         public ActionResult FindMaterials(IEnumerable<MaterialResult> MaterialResult)
